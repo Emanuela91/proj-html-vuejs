@@ -63,5 +63,40 @@ export default {
 
 
 <style lang="scss" scoped>
-@use '../styles/generals.scss'
+@use '../styles/generals.scss' as*;
+@use '../styles/partials/mixins' as*;
+@use '../styles/partials/variables' as*;
+
+.container {
+
+    // stile parte superiore header con menu nav
+    .top {
+        height: 60px;
+        @include between();
+
+        img {
+            height: 100px;
+        }
+
+        nav {
+            ul {
+                @include between();
+
+                li {
+                    list-style: none;
+                    margin-left: 15px;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 18px;
+                        display: inline-block;
+                        color: $text_header;
+                    }
+                }
+            }
+        }
+    }
+
+    // stile parte inferiore header
+}
 </style>
