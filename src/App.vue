@@ -1,16 +1,21 @@
 <script>
 import HeaderVue from './components/Header.vue';
+import MainFirstVue from './components/MainFirst.vue';
 
 export default {
   name: "App",
   components: {
     HeaderVue,
+    MainFirstVue
   }
 }
 </script>
 
 <template>
   <HeaderVue />
+  <main>
+    <MainFirstVue />
+  </main>
 </template>
 
 

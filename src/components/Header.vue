@@ -45,7 +45,7 @@ export default {
                 <nav>
                     <ul>
                         <li v-for="(link, index) in menuNav" key="index">
-                            <a :class="{ active: link.current }" :href="link.url">
+                            <a :href="link.url">
                                 {{ link.text }}
                             </a>
                         </li>
@@ -94,7 +94,7 @@ export default {
                         text-decoration: none;
                         font-size: 18px;
                         display: inline-block;
-                        color: $text_header;
+                        color: $text;
                     }
                 }
             }
@@ -118,14 +118,14 @@ export default {
         h1 {
             width: 50%;
             font-size: 50px;
-            color: $text_header;
+            color: $text;
         }
 
         span {
             padding: 10px 30px;
-            border: 1px solid $text_header;
+            border: 1px solid $text;
             margin-top: 40px;
-            color: $text_header;
+            color: $text;
         }
     }
 }
