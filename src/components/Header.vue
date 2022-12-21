@@ -53,10 +53,14 @@ export default {
                 </nav>
 
             </section>
-            <section class="bottom">
-
-            </section>
         </div>
+        <section class="bottom">
+            <div class="container">
+                <h1>Professional Development For Coaches and Leaders</h1>
+                <span>Learn More</span>
+            </div>
+
+        </section>
     </div>
 
 </template>
@@ -96,7 +100,33 @@ export default {
             }
         }
     }
+}
 
-    // stile parte inferiore header
+// stile parte inferiore header
+.bottom {
+    height: 600px;
+    background-image: url(../assets/img/02_Landing-Page.jpg);
+    background-size: 100% 100%;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            width: 50%;
+            font-size: 50px;
+            color: $text_header;
+        }
+
+        span {
+            padding: 10px 30px;
+            border: 1px solid $text_header;
+            margin-top: 40px;
+            color: $text_header;
+        }
+    }
 }
 </style>
