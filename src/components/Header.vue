@@ -1,0 +1,67 @@
+<script>
+export default {
+    name: "Header",
+
+    data() {
+        return {
+            menuNav: [
+                {
+                    text: "Home",
+                    url: "#"
+                },
+                {
+                    text: "About",
+                    url: "#"
+                },
+                {
+                    text: "Academics",
+                    url: "#"
+                },
+                {
+                    text: "Curses",
+                    url: "#"
+                },
+                {
+                    text: "News",
+                    url: "#"
+                },
+            ]
+
+        }
+    },
+
+}
+</script>
+
+
+<template>
+    <div>
+        <div class="container">
+            <section class="top">
+                <div class="logo">
+                    <img src="../assets/img/Logo.jpg" alt="logo">
+                </div>
+
+                <nav>
+                    <ul>
+                        <li v-for="(link, index) in menuNav" key="index">
+                            <a :class="{ active: link.current }" :href="link.url">
+                                {{ link.text }}
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </section>
+            <section class="bottom">
+
+            </section>
+        </div>
+    </div>
+
+</template>
+
+
+<style lang="scss" scoped>
+@use '../styles/generals.scss'
+</style>
