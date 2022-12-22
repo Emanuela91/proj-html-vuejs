@@ -1,12 +1,14 @@
 <script>
 import HeaderVue from './components/Header.vue';
 import MainFirstVue from './components/MainFirst.vue';
+import MainSecondVue from './components/MainSecond.vue';
 
 export default {
   name: "App",
   components: {
     HeaderVue,
-    MainFirstVue
+    MainFirstVue,
+    MainSecondVue,
   }
 }
 </script>
@@ -15,6 +17,7 @@ export default {
   <HeaderVue />
   <main>
     <MainFirstVue />
+    <MainSecondVue />
   </main>
 </template>
 

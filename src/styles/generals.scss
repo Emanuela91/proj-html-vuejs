@@ -1,4 +1,6 @@
 @use './partials/variables.scss' as*;
+@use './partials/mixins' as*;
+
 
 * {
     margin: 0;
@@ -26,9 +28,37 @@ div.sentence {
 }
 
 h6 {
-    font-size: 15px;
+    font-size: 19px;
 }
 
 p {
     line-height: 25px;
+}
+
+// stile delle card
+.cards {
+    @include wrap();
+    margin-top: 50px;
+
+    .card {
+        width: calc(100% / 3 - 20px);
+        margin-right: 20px;
+        box-shadow: 10px 10px 15px #f7f4f4,
+            -10px 5px 15px #f7f4f4;
+
+        img {
+            margin-bottom: 20px;
+        }
+
+        h6 {
+            margin-bottom: 20px;
+            padding: 0 20px;
+        }
+
+        p {
+            margin-bottom: 40px;
+            padding: 0 20px;
+        }
+    }
+
 }

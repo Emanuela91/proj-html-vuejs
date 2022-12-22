@@ -39,7 +39,7 @@ export default {
         <div class="container">
             <section class="top">
                 <div class="logo">
-                    <img src="../assets/img/Logo.jpg" alt="logo">
+                    <img src="/img/Logo.jpg" alt="logo">
                 </div>
 
                 <nav>
@@ -105,7 +105,7 @@ export default {
 // stile parte inferiore header
 .bottom {
     height: 600px;
-    background-image: url(../assets/img/02_Landing-Page.jpg);
+    background-image: url(/img/02_Landing-Page.jpg);
     background-size: 100% 100%;
 
     .container {

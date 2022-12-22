@@ -61,30 +61,15 @@ export default {
     }
 
     .cards {
-        @include wrap();
-        margin-top: 50px;
 
         .card {
-            width: calc(100% / 3 - 20px);
-            margin-right: 20px;
             text-align: center;
-            box-shadow: 10px 10px 15px #f7f4f4,
-                -10px 5px 15px #f7f4f4;
             padding-bottom: 35px;
 
             img {
                 height: 40px;
                 margin-top: 30px;
-                margin-bottom: 20px;
-            }
 
-            h6 {
-                margin-bottom: 20px;
-            }
-
-            p {
-                margin-bottom: 40px;
-                padding: 0 20px;
             }
         }
 
