@@ -36,6 +36,7 @@ export default {
 
 <template>
     <section>
+
         <div class="container">
             <h4>Recent Courses</h4>
             <p class="subtitle">Whether you considering a foundation course or an undergraduate degree master's or a
@@ -62,18 +63,6 @@ export default {
 @use '../styles/partials/mixins' as*;
 @use '../styles/partials/variables' as*;
 
-h4 {
-    text-align: center;
-    font-size: 25px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-
-.subtitle {
-    text-align: center;
-    width: 62%;
-    margin-left: 20%;
-}
 
 .card {
 
