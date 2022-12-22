@@ -36,12 +36,24 @@ export default {
 
 <template>
     <section>
-
         <div class="container">
+            <section id="number">
+                <div><span id="orange">6500 +</span> Studens
+                    <img id="one" src="/img/counter-shape-1-1-1.png" alt="">
+                </div>
+                <div><span class="color">200 +</span> Online Courses
+                    <img id="two" src="/img/counter-shape-2-1-1.png" alt="">
+                </div>
+                <div><span id="green">100%</span> Happy Clients
+                    <img id="three" src="/img/counter-shape-3-1-1.png" alt="">
+                </div>
+            </section>
+
             <h4>Recent Courses</h4>
             <p class="subtitle">Whether you considering a foundation course or an undergraduate degree master's or a
                 PhD, academics is a
-                place where studenst thrive.</p>
+                place where studenst thrive.
+            </p>
 
             <div class="cards">
                 <div class="card" v-for="(link, index) in cardArray" key="index">
@@ -63,6 +75,47 @@ export default {
 @use '../styles/partials/mixins' as*;
 @use '../styles/partials/variables' as*;
 
+#number {
+    display: flex;
+    justify-content: space-around;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 50px;
+
+    div {
+
+
+        #one {
+            position: relative;
+            right: 127px;
+            top: 13px;
+            height: 30px;
+        }
+
+        #two {
+            position: relative;
+            height: 30px;
+            right: 185px;
+            top: 10px;
+        }
+
+        #three {
+            position: relative;
+            height: 30px;
+            right: 175px;
+            top: 10px;
+        }
+
+        #orange {
+            color: $text_orange;
+        }
+
+
+        #green {
+            color: $text_green;
+        }
+    }
+}
 
 .card {
 
