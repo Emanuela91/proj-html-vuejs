@@ -17,13 +17,13 @@ export default {
             </p>
 
             <!-- sezione delle immagini sovrapposte -->
-            <div>
+            <div class="events">
                 <div class="under">
-                    <img src="/img/video-bg-3.jpg" alt="">
-                    <font-awesome-icon class="icon" icon="fa-regular fa-play-circle" />
+                    <img src="/img/play.png" alt="">
                 </div>
 
                 <div class="over">
+
 
                 </div>
             </div>
@@ -58,13 +58,38 @@ p {
     }
 }
 
-.icon {
-    color: red;
-    position: relative;
-    bottom: 51%;
-    height: 55px;
-    right: 33%;
-    background-color: white;
-    border-radius: 100px;
+.events {
+    display: flex;
+    position: absolute;
+
+    .under {
+        height: 550px;
+        width: 550px;
+        background-image: url(/img/video-bg-3.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 100px;
+        }
+
+
+    }
+
+    .over {
+        position: relative;
+        height: 550px;
+        width: 550px;
+        box-shadow: 10px 10px 15px #f7f4f4;
+        top: 60px;
+        right: 180px;
+        background-color: white;
+    }
+
+
 }
 </style>
