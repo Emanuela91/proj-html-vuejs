@@ -37,6 +37,7 @@ export default {
 <template>
     <section>
         <div class="container">
+            <!-- sezione dei corsi, studenti -->
             <section id="number">
                 <div><span id="orange">6500 +</span> Studens
                     <img id="one" src="/img/counter-shape-1-1-1.png" alt="">
@@ -55,6 +56,7 @@ export default {
                 place where studenst thrive.
             </p>
 
+            <!-- sezione cards -->
             <div class="cards">
                 <div class="card" v-for="(link, index) in cardArray" key="index">
                     <img :src="link.image" alt="">
@@ -75,6 +77,7 @@ export default {
 @use '../styles/partials/mixins' as*;
 @use '../styles/partials/variables' as*;
 
+// classi per la parte con i numeri dei corsi, studenti
 #number {
     display: flex;
     justify-content: space-around;
@@ -117,6 +120,7 @@ export default {
     }
 }
 
+// classi delle card
 .card {
 
     img {

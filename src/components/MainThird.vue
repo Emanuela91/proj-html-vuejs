@@ -15,6 +15,18 @@ export default {
                     abilities
                 </span>"
             </p>
+
+            <!-- sezione delle immagini sovrapposte -->
+            <div>
+                <div class="under">
+                    <img src="/img/video-bg-3.jpg" alt="">
+                    <font-awesome-icon class="icon" icon="fa-regular fa-play-circle" />
+                </div>
+
+                <div class="over">
+
+                </div>
+            </div>
         </div>
     </section>
 
@@ -44,5 +56,15 @@ p {
     span#bold {
         font-weight: bold;
     }
+}
+
+.icon {
+    color: red;
+    position: relative;
+    bottom: 51%;
+    height: 55px;
+    right: 33%;
+    background-color: white;
+    border-radius: 100px;
 }
 </style>
