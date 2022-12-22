@@ -116,7 +116,7 @@ export default {
         justify-content: center;
 
         h1 {
-            width: 50%;
+            width: 62%;
             font-size: 50px;
             color: $text;
         }

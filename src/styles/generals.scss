@@ -7,6 +7,28 @@
 }
 
 .container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
+}
+
+
+// colore di una parte di frase
+span.color {
+    color: $text_red;
+}
+
+
+// frase che contiene anche lo span rosso
+div.sentence {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h6 {
+    font-size: 15px;
+}
+
+p {
+    line-height: 25px;
 }
