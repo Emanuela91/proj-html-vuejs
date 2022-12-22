@@ -2,6 +2,7 @@
 import HeaderVue from './components/Header.vue';
 import MainFirstVue from './components/MainFirst.vue';
 import MainSecondVue from './components/MainSecond.vue';
+import MainThirdVue from './components/MainThird.vue';
 
 export default {
   name: "App",
@@ -9,6 +10,7 @@ export default {
     HeaderVue,
     MainFirstVue,
     MainSecondVue,
+    MainThirdVue
   }
 }
 </script>
@@ -18,6 +20,7 @@ export default {
   <main>
     <MainFirstVue />
     <MainSecondVue />
+    <MainThirdVue />
   </main>
 </template>
 

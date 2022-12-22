@@ -80,6 +80,8 @@ export default {
 
         img {
             height: 100px;
+            position: relative;
+            top: 22px;
         }
 
         nav {
