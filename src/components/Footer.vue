@@ -117,6 +117,21 @@ export default {
                 </ul>
             </nav>
 
+            <!-- parte del Copyright -->
+            <div class="diritti">
+                <div class="copy">
+                    <font-awesome-icon icon="fa-solid fa-copyright" /> Copyright 2020 tophive. All Rights Reserved.
+                </div>
+                <ul>
+                    <li v-for="(link, index) in supportArray" key="index">
+                        <a href="">
+                            {{ link.link }}
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
 
         </div>
     </section>
@@ -131,6 +146,7 @@ export default {
 section {
     background-color: #192634;
     padding-top: 20px;
+
 
     nav {
         @include between();
@@ -150,5 +166,32 @@ section {
             }
         }
     }
+
+    .diritti {
+        @include between();
+        padding: 10px 0;
+        margin-top: 30px;
+        background-color: #15222e;
+
+        .copy {
+            color: #8597aa;
+            font-size: 12px;
+        }
+
+        ul {
+            @include between();
+
+            li {
+                margin-left: 15px;
+
+                a {
+                    color: #8597aa;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+
 }
 </style>
