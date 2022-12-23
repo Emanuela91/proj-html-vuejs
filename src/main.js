@@ -4,9 +4,11 @@ import App from './App.vue'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faPlayCircle } from '@fortawesome/free-regular-svg-icons'
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
+import { faMap } from '@fortawesome/free-regular-svg-icons'
 
-library.add(faPlayCircle)
+library.add(faAngleRight)
+library.add(faMap)
 
 // createApp(App).mount('#app')
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app');

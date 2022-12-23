@@ -17,15 +17,32 @@ export default {
             </p>
 
             <!-- sezione delle immagini sovrapposte -->
+            <!-- carta sotto -->
             <div class="events">
-                <div class="under">
+                <section class="under">
                     <img src="/img/play.png" alt="">
-                </div>
+                </section>
 
-                <div class="over">
+                <!-- carta sopra -->
+                <section class="over">
+                    <h4>Upcoming Events</h4>
 
+                    <div class="parag">
+                        Princeton offers admission information sessions and student-led tours to campus
+                        visitors
+                    </div>
+                    <span id="icon">Learn more <font-awesome-icon icon="fa-solid fa-angle-right" /></span>
 
-                </div>
+                    <div class="parag">
+                        Admission information sessions and student-led tours to campus
+                        visitors
+                    </div>
+                    <span id="icon">Learn more <font-awesome-icon icon="fa-solid fa-angle-right" /></span>
+
+                    <div class="location"><font-awesome-icon icon="fa-regular fa-map" /> Event Location
+                        <font-awesome-icon icon="fa-solid fa-angle-right" />
+                    </div>
+                </section>
             </div>
         </div>
     </section>
@@ -37,6 +54,7 @@ export default {
 @use '../styles/partials/mixins' as*;
 @use '../styles/partials/variables' as*;
 
+// sezione del paragrafo
 p {
     margin: 50px 0;
     font-size: 25px;
@@ -58,10 +76,12 @@ p {
     }
 }
 
+// sezione delle carte sovrapposte
 .events {
     display: flex;
     position: absolute;
 
+    // carta sotto
     .under {
         height: 550px;
         width: 550px;
@@ -76,10 +96,9 @@ p {
             height: 60px;
             border-radius: 100px;
         }
-
-
     }
 
+    // carta sopra 
     .over {
         position: relative;
         height: 550px;
@@ -88,8 +107,35 @@ p {
         top: 60px;
         right: 180px;
         background-color: white;
+
+        h4 {
+            background-color: $text_red;
+            color: white;
+            padding: 25px 0;
+            margin: 0 130px;
+            margin-bottom: 80px;
+        }
+
+        .parag {
+            font-size: 19px;
+            padding: 0 20px;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        #icon {
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        .location {
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 60px;
+            margin-left: 20px;
+            text-align: center;
+        }
     }
-
-
 }
 </style>
