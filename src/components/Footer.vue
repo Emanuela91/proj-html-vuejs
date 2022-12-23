@@ -134,9 +134,11 @@ export default {
                     </li>
                 </ul>
             </nav>
+        </div>
 
-            <!-- parte del Copyright -->
-            <div class="diritti">
+        <!-- parte del Copyright -->
+        <div class="diritti">
+            <div class="container">
                 <div class="copy">
                     <font-awesome-icon icon="fa-solid fa-copyright" /> Copyright 2020 tophive. All Rights Reserved.
                 </div>
@@ -147,11 +149,11 @@ export default {
                         </a>
                     </li>
                 </ul>
-
             </div>
 
-
         </div>
+
+
     </section>
 
 </template>
@@ -165,7 +167,7 @@ section {
     background-color: #192634;
     padding-top: 20px;
 
-    // sezione newsletter
+    // css sezione newsletter
     .newsletter {
         @include between();
         justify-content: space-around;
@@ -229,10 +231,13 @@ section {
 
     // css parte del copyright
     .diritti {
-        @include between();
         padding: 10px 0;
         margin-top: 30px;
         background-color: #15222e;
+
+        .container {
+            @include between();
+        }
 
         .copy {
             color: #8597aa;
