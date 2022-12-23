@@ -65,6 +65,24 @@ export default {
     <section>
         <div class="container">
 
+            <!-- sezione newsletter -->
+            <div class="newsletter">
+                <div class="register">
+                    <form>
+                        <input type="text" placeholder="Subscrive to our newsletter" size="40">
+                        <button>Register</button>
+                    </form>
+                </div>
+                <div class="takeme">
+                    <div class="parag">
+                        <span class="color">Insights is Picwik</span> University's thought leadership pubblication for
+                        sharing knowledge on managment, technology and innovation.
+                    </div>
+                    <span id="icon">Take me there <font-awesome-icon icon="fa-solid fa-angle-right" /></span>
+                </div>
+
+            </div>
+
             <!-- menu navigazione footer -->
             <nav>
                 <ul>
@@ -147,7 +165,49 @@ section {
     background-color: #192634;
     padding-top: 20px;
 
+    // sezione newsletter
+    .newsletter {
+        @include between();
+        justify-content: space-around;
+        box-shadow: 10px 10px 15px #252424,
+            -10px 5px 15px #252424;
+        padding: 30px 0;
+        margin: 50px 0;
 
+        .register {
+            input {
+                padding: 15px;
+                border: none;
+            }
+
+            button {
+                border: none;
+                padding: 15px 15px;
+                background-color: $text_red;
+                color: white;
+            }
+        }
+
+        .parag {
+            color: #8597aa;
+            font-size: 12px;
+            margin-bottom: 5px;
+
+            span {
+                text-decoration: underline;
+                text-underline-offset: 4px;
+                text-decoration-color: white;
+            }
+        }
+
+        #icon {
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+
+    // css menu navigazione
     nav {
         @include between();
         align-items: flex-start;
@@ -167,6 +227,7 @@ section {
         }
     }
 
+    // css parte del copyright
     .diritti {
         @include between();
         padding: 10px 0;
