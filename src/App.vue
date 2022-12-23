@@ -4,6 +4,7 @@ import MainFirstVue from './components/MainFirst.vue';
 import MainSecondVue from './components/MainSecond.vue';
 import MainThirdVue from './components/MainThird.vue';
 import FooterVue from './components/Footer.vue';
+import CarouselVue from './components/Carousel.vue';
 
 export default {
   name: "App",
@@ -12,6 +13,7 @@ export default {
     MainFirstVue,
     MainSecondVue,
     MainThirdVue,
+    CarouselVue,
     FooterVue
   }
 }
@@ -23,6 +25,7 @@ export default {
     <MainFirstVue />
     <MainSecondVue />
     <MainThirdVue />
+    <CarouselVue />
   </main>
   <FooterVue />
 </template>
