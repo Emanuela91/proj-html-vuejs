@@ -79,7 +79,7 @@ p {
 // sezione delle carte sovrapposte
 .events {
     display: flex;
-    position: absolute;
+    margin-bottom: 140px;
 
     // carta sotto
     .under {

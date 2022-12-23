@@ -3,6 +3,7 @@ import HeaderVue from './components/Header.vue';
 import MainFirstVue from './components/MainFirst.vue';
 import MainSecondVue from './components/MainSecond.vue';
 import MainThirdVue from './components/MainThird.vue';
+import FooterVue from './components/Footer.vue';
 
 export default {
   name: "App",
@@ -10,7 +11,8 @@ export default {
     HeaderVue,
     MainFirstVue,
     MainSecondVue,
-    MainThirdVue
+    MainThirdVue,
+    FooterVue
   }
 }
 </script>
@@ -22,6 +24,7 @@ export default {
     <MainSecondVue />
     <MainThirdVue />
   </main>
+  <FooterVue />
 </template>
 
 

@@ -35,6 +35,14 @@ p {
     line-height: 25px;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 // stile delle card
 .cards {
     @include wrap();

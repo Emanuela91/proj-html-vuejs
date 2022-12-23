@@ -89,11 +89,9 @@ export default {
                 @include between();
 
                 li {
-                    list-style: none;
                     margin-left: 15px;
 
                     a {
-                        text-decoration: none;
                         font-size: 18px;
                         display: inline-block;
                         color: $text;
